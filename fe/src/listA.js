@@ -27,8 +27,8 @@ const ListA = () => {
 
     // Lọc theo search term
     if (searchTerm) {
-      filtered = filtered.filter((project) =>
-        project.title.charAt(0).toLowerCase().includes(searchTerm.toLowerCase())
+      filtered = filtered.filter((a) =>
+        a.title.toLowerCase().startsWith(searchTerm.toLowerCase())
       );
     }
 
